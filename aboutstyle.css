@@ -1,0 +1,133 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2D2D2D;
+}
+a 
+{
+text-decoration: none;
+font-size:20px;
+padding:10px;
+display: inline-block;
+font-family: Roboto;
+margin:0;
+}
+nav {
+    background-color:#333B50;
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-family: monospace;
+}
+
+h3{
+    color:white;
+}
+ul {
+    color: white;
+}
+h5{
+    margin-top: 0;
+    color: #BEC7B5;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.certificate li {
+    margin-left: 0; 
+}
+.certificate li::marker {
+    font-size: 30px; 
+}
+.certificate {
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.certificate h2 {
+    margin-top: 0;
+    color: aliceblue;
+    margin-left: 30px;
+    font-style: normal;
+    font-family: monospace;
+}
+
+.certificate p {
+    margin: 10px 0;
+}
+
+.certificate a {
+    color: whitesmoke;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 300px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   
+}
+.certificate-link{
+    border: 1px solid #ccc; 
+            padding: 10px; 
+            border-radius: 5px; 
+}
+
+.certificate a {
+    display: inline-block;
+    border: 1px solid #ccc; 
+    padding: 10px 20px;
+    color: whitesmoke;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: #00D646;
+    
+}
+
+.certificate a:hover {
+    color: white;
+    border-color: #00D646;
+    background-color: #00D646;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+.certificate {
+    opacity: 0; 
+    animation: fadeIn 2s ease forwards;
+
+}
+
