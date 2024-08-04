@@ -108,16 +108,31 @@ h5
 
 .certificate-link
 {
-    border: 1px solid #ccc; 
-            padding: 10px; 
-            border-radius: 5px;
+    align-items: center;
+    display:flex;
+    flex-direction : column;
+        border: 1px solid #ccc; 
+        padding: 10px; 
+        border-radius: 5px; 
+        align-content: end;       
+        width: 150px; 
+        height: 20 px; 
+        float: right;
+}
 
+.certificate-link-button {
+    align-self: flex-end;
+    width: 100px;
+    height: 30 px;
 }
 
 .certificate-item {
     margin-bottom: 20px;
 }
 
+.certificate-link-details {
+    text-align: right;
+}
 
 
 .certificate a:hover 
