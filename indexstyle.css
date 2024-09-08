@@ -1,20 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D2D2D;
 }
-a 
-{
-text-decoration: none;
-font-size:30px;
-padding:10px;
-display: inline-block;
-font-family: Roboto;
-margin:0;
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
+
+p {
+    line-height: 1.6; /* Adjusts the space between lines */
+    margin-bottom: 1.5rem; /* Adds space after the paragraph */
+    letter-spacing: 0.5px; /* Adds slight spacing between letters */
+}
+
 nav {
-    background-color: #333B50;
-    height: 60px; 
+    background-color:  #333B50;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,62 +30,73 @@ nav {
 
 nav a {
     text-decoration: none;
-    color:white;
+    color: whitesmoke;
     padding: 0 20px;
 }
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-@media only screen and (min-width: 768px) {
-    /* For laptop/desktop screens */
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-}
-
-/* You can adjust the breakpoint (768px) as needed to target different screen sizes */
-
 
 .image-container {
     position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread content between text and image */
 }
 
+.highlighted 
+{ 
+    background-color: #00D646; 
+    padding: 0.2rem 0.5rem; 
+}
 
 .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #2d2d2d;
+    margin-left: 50px;
+    text-align: left;
+    color: white;
+    padding: 20px;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:white;
+.text-overlay h1 {
+    color: white;
+    font-size: 4rem;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 110%;
-    }
+.text-overlay h2 {
+    font-family: monospace;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 #typing-animation {
     display: inline-block;
-    border-right: 2px solid white;
-    animation: typing 3s steps(20) infinite; 
+    border-right: 3px solid white;
     white-space: nowrap;
-    overflow:hidden;
+    overflow: hidden;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    vertical-align: middle;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.profile-image {
+    margin-right: 250px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%; /* Make the image circular */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits well in the circle */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
 }
